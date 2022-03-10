@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let year = parseInt(prompt("Enter a year= "));
+    //     let a = year + (" la nam nhuan");
+    //     let b = year + (" khong la nam nhuan");
+
+
+    // if (year%4 ==0) {
+    //     if(year%100 ==0) {
+    //         if(year%400 ==0) {
+    //             alert(a);
+    //         }else{
+    //             alert(b);
+    //         }
+    //     }else{
+    //         alert(a);
+    //     }
+    // }else{
+    //     alert(b);
+    // }
+
+    let Nhuan = false;
+    let year = parseInt(prompt("Nhap nam:  "));
+    let chia4 = year%4 ==0;
+    if (chia4) {
+        let chia100 = year%100 ==0;
+        if(chia100) {
+            let chia400 = year%400 ==0;
+            if(chia400){
+                Nhuan = true;
+            }
+        }else{
+            Nhuan = true;
+        }
+    }
+
+    if(Nhuan){
+        alert(year + "-la nam nhuan")
+    }else{
+        alert(year + "-la nam khong nhuan")
+    }
+
+   
+    </script>
+</body>
+</html>
