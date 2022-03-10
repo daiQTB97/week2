@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Caculator</h1>
+<body>
+    <form>
+        <input type="text" id ="idtext1" style="margin-bottom: 10px;width: 170px;">
+        <input type="text" id="idtext2" style="margin-bottom: 10px;margin-left: 10px;width: 170px"><br>
+        <button type="button" onclick="tinhtong()">Addition(+)</button>
+        <button type="button" onclick="tinhhieu()">Subtraction(-)</button>
+        <button type="button" onclick="tinhnhan()">Multiplication(X)</button>
+        <button type="button" onclick="tinhchia()">Divition(/)</button>
+    </form>
+        
+    <script>
+
+function tinhtong(){
+    //document.getElementById("idtext1").value
+    a= parseInt(document.getElementById("idtext1").value);
+    b= parseInt(document.getElementById("idtext2").value);
+    var tinhtong = a + b;
+    alert("tổng số = " + tinhtong);
+}
+function tinhhieu(){
+    a= parseInt(document.getElementById("idtext1").value);
+    b= parseInt(document.getElementById("idtext2").value);
+    var tinhhieu= a-b;
+    alert("hiệu số = " + tinhhieu);
+}
+function tinhnhan(){
+    a= parseInt(document.getElementById("idtext1").value);
+    b= parseInt(document.getElementById("idtext2").value);
+    var tinhnhan=a*b;
+    alert("tích số = " + tinhnhan);
+}
+function tinhchia(){
+    a= parseInt(document.getElementById("idtext1").value);
+    b= parseInt(document.getElementById("idtext2").value);
+    var tinhchia=a/b;
+    alert("thương số = " +tinhchia);
+}
+    </script>
+</body>
+</html>
