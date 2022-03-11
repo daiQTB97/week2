@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("điểm bài kiểm tra = "));
+        var b = parseInt(prompt("điểm bài giữa kì = "));
+        var c = parseInt(prompt("điểm bài cuối kì= "));
+        var D = (a+b*2+c*3)/6
+        if (D<5){
+            alert("học sinh yếu kém")
+        }
+        if (D==5 && D>5 && D<6.5){
+            alert("học sinh trung bình")
+        } 
+        if (D==6.5 && D>6.5 && D<8){
+            alert("học sinh khá")
+        }
+        else{
+            alert("học sinh giỏi")
+        }
+
+    </script>
+</body>
+</html>

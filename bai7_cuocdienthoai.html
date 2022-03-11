@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("số thời gian sử dụng phút")
+        if (a<50 && a==0){
+            a = 25000 + 600*a
+            alert(a + " đồng ")
+        }
+        if (a>50 && a < 200){
+            a = 25000 + 400*a
+            alert(a + " đồng ")
+        }else{
+            a = 25000 + 200*a
+            alert(a + " đồng ")
+        }
+    
+    </script>
+    
+</body>
+</html>
