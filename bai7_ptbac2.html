@@ -8,21 +8,21 @@
 </head>
 <body>
     <script>
-        var a = parseInt(prompt("giá trị a = "))
-        var b = parseInt(prompt("giá trị b = "))
-        var c = parseInt(prompt("giá trị c = "))
-        var delta= b*b-4*a*c
+        var a = parseInt(prompt("giá trị a = "));
+        var b = parseInt(prompt("giá trị b = "));
+        var c = parseInt(prompt("giá trị c = "));
+        var delta= b*b-4*a*c;
     if (delta<0){
-        alert("phương trình vô nghiệm")
+        alert("phương trình vô nghiệm");
     }
     if (delta>0){
      var n1 = (-b + Math.sqrt(delta))/(2*a)
      var n2 = (-b - Math.sqrt(delta))/(2*a)
-        alert("phương trình có 2 nghiệm phân biệt là n1=" + n1+" n2 = " + n2)
+        alert("phương trình có 2 nghiệm phân biệt là n1=" + n1+" n2 = " + n2);
     }
     if (delta == 0) {
-        var n = -b/2*a
-        alert("phương trình có 1 nghiệm kép" + "+" +n + "-"+ n)
+        var n = -b/(2*a)  
+        alert("phương trình có 1 nghiệm kép"+ n)
     }
 
     </script>
