@@ -10,19 +10,18 @@
 <body>
     <input type="text" style="width: 100px;" id="idtext1">
     <button type="button" onclick="thanhtoan()">số tiền</button><br>
-    <label style="margin-right: 40px;;">Tiền tính Thuế</label>
+    <label style="margin-right: 50px;">Tiền tính Thuế</label>
     <script>
         function thanhtoan(){
             var a = document.getElementById("idtext1").value;
-        if (a<7000000){
-            var a = a*0.1;
+        if (a>=15000000){
+            var a = a*0.3;
             alert("số tiền chịu thuế = " + a)
-        }
-        if (a>7000000 && a<15000000){
+        }else if (a>=7000000) {         
             var a = a*0.2;
             alert("số tiền chịu thuế = " + a)
         }else{
-            var a = a*0.3;
+            var a = a*0.1;
             alert("số tiền chịu thuế = " + a)
         }
         }

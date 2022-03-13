@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("nhập vào số tiền gửi ngân hàng(Triệu VNĐ)"));
+            b = parseFloat(prompt("nhập vào % lãi suất hàng tháng của ngân hàng"));
+            c = parseFloat(prompt("nhập vào số tháng gửi : "));
+            if (a < 0 ){
+                alert("tiền gửi vào ngân hàng phải lớn hơn 0");
+            }else{
+                if(b<0){
+                    alert("% lãi suất của ngân hàng phải lớn hơn 0");
+                }else{
+                    if(c<0){
+                        alert("số tháng gửi phải lớn hơn 0");
+                    }else{
+                        total = ((a/100) * b)*c;
+                        alert("vậy số tiền lãi nhận được là: "+total+ " triệu VNĐ");
+                    }
+                }
+            }
+    </script>
+</body>
+</html>

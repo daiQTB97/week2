@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="docReady()">
+    <img id="Sadboy"style="position:absolute;left:0; top:0;" height="200" width="180" src="https://i.pinimg.com/originals/5e/2b/57/5e2b57d6c5a1d51218212424f9f853ca.gif">
+    <script>
+        function nhanlen() {
+            var element = document.getElementById("Sadboy");
+            element.style.top = parseInt(element.style.top) - 5 + "px";
+        }
+        function nhanxuong() {
+            var element = document.getElementById("Sadboy");
+            element.style.top = parseInt(element.style.top) + 5 + "px";
+        }
+        function nhantrai() {
+            var element = document.getElementById("Sadboy");
+            element.style.left = parseInt(element.style.left) - 5 + "px";
+        }
+        function nhanphai() {
+            var element = document.getElementById("Sadboy");
+            element.style.left = parseInt(element.style.left) + 5 + "px";
+        }
+        function dichuyen(evt){
+            switch (evt.keyCode) {
+                case 37:
+                nhantrai();
+                    break;
+                case 39:
+                nhanphai();
+                    break;
+                case 38:
+                nhanlen();
+                    break;
+                case 40:
+                nhanxuong();
+                    break;
+            }
+        }
+        function docReady() {
+        window.addEventListener("keydown", dichuyen);
+}
+    </script>    
+</body>
+</html>
